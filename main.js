@@ -69,8 +69,8 @@ function stopCountDown()
 //function for genrating QA
 function genrateQA()
 {
-    let x= 1+Math.floor(9*Math.random());
-    let y= 1+Math.floor(9*Math.random());
+    let x= 1+Math.floor(15*Math.random());
+    let y= 1+Math.floor(15*Math.random());
     correctanswer=x * y;
     document.getElementById("question").innerHTML=x + "x" +y;
     let correctposition=1+Math.round(3 * Math.random());
@@ -85,7 +85,7 @@ function genrateQA()
             let wronganswer;
             do
             {
-                wronganswer=(1+Math.floor(9*Math.random())) * (1+Math.floor(9*Math.random()));
+                wronganswer=(1+Math.floor(15*Math.random())) * (1+Math.floor(15*Math.random()));
             }while(answer.indexOf(wronganswer) >-1);
             answer.push(wronganswer);
             document.getElementById("box" + i).innerHTML=wronganswer;
